@@ -54,9 +54,10 @@ html{
 }
 
 body{
+    
     margin: 0;
     padding: 0;
-    background-color: rgba(245, 222, 179, 0.389);
+    background-color: rgba(228, 160, 33, 0.389);
 }
 
 #nettside-laging{
@@ -200,4 +201,5 @@ main{
 #prosjekter{
     background-color: palegoldenrod;
     margin-inline: auto;
+
 }
