@@ -188,7 +188,9 @@ main{
 
 #CVartikkel{
     background-color: palegoldenrod;
-    max-width: 70%;
+    max-width: 40%;
     margin-inline: auto;
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 150px;
 }
