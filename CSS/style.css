@@ -1,0 +1,183 @@
+header{
+    display: flex;
+    background-color: wheat;
+}
+
+#fot{
+    display: flex;
+    justify-content: center;
+    background-color: darkslategray;
+    color: wheat;
+    padding: 50px;
+}
+
+#tommeloppbilde{
+    height:max-content;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+#littommegselv{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(202, 120, 20);
+    justify-content:space-evenly;
+    height: 50px;
+    overflow: hidden;
+    transition: height 1.5s ease;
+    text-align: center;
+    align-items: flex-start;
+    
+}
+
+#littommegselv:hover{
+    height: 200px;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+#littommegselvartikkel{
+    text-align: center;
+    background-color: rgb(216, 140, 46);
+    margin: 0;
+    padding: 0;
+}
+
+#littommeg{
+    background-color: rgb(216,140,46);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(245, 222, 179, 0.389);
+}
+
+#nettside-laging{
+    background-color: wheat;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#AIinteresse{
+    background-color: wheat;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#alder{
+    background-color: wheat;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hodetekstogbilde{
+    text-align: center;
+    h1{
+        font-size: 3rem;
+    }
+    position: relative;
+    color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#kontaktmegtopp{
+    margin-left: 0;
+    text-decoration: none;
+    color: darkkhaki;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 25%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+#seksjontopp{
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#littommegtopp{
+    text-decoration: none;
+    color: darkkhaki;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 25%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease, transform 0.2s ease;
+}
+
+#littommegtopp:hover{
+    background-color: rgb(70, 116, 118);
+    transform: scale(1.1);
+}
+
+#kontaktmegtopp:hover{
+    background-color: rgb(70, 116, 118);
+    transform: scale(1.1);
+}
+
+#kontaktmegtopp:active{
+    transform: scale(0.9);
+}
+
+#littommegtopp:active{
+    transform: scale(0.9);
+}
+
+#merinfo{
+    background-color: cadetblue;
+    cursor: grabbing;
+}
+
+#ferdigheterogslikt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#ferdigheter{
+    text-align: center;
+}
+
+#listemednettsider{
+    text-decoration: underline;
+}
+
+.klikkbar{
+    color: #551A8B;
+    cursor: pointer;
+    max-width: 1px;
+}
+
+main{
+    max-width: 1400px;
+    margin-inline: auto;
+}

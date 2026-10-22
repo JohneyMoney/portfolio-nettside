@@ -1,0 +1,121 @@
+/*her importerte jeg en font fra google som heter inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html{
+    /*jeg tok scroll behavior smooth fordi jeg har to a linker som frakter deg rundt i siden, og jeg ville at den skulle smooth bla deg nedover*/
+    scroll-behavior: smooth;
+}
+
+body{
+    /*margin og padding på null for å unngå problemer i koden*/
+    margin: 0;
+    padding: 0;
+    /*her bruker jeg font inter som ble importert over, og hvis den ikke fungerer bruker den standar som er sans serif*/
+    font-family: 'Inter',sans-serif;
+    background-color: blanchedalmond;
+}
+/* Jakob hjalp meg her fordi jeg med et uhell redigerte på header når jeg skulle endre noe på body*/
+header{
+    background-color: burlywood;
+    /*her har jeg tatt padding 1px fordi uten padding ser header veldig stygg ut, og jeg ville ha bittelitt mer header*/
+    padding: 1px;
+    font-size: 40px;
+    /*text align for å få teksen i midten.*/
+    text-align: center;
+}
+
+main{
+    /*her har jeg tatt margin 30px auto for at ingenting skal være klistra til siden i main*/
+    margin: 30px auto;
+    /*jeg tok max width 1400px slik at alt blir litt mer i midten av siden*/
+    max-width: 1400px;
+}
+
+#introduksjon{
+    padding: 7px;
+    background-color: wheat;
+    text-align: center;
+    /*her tok jeg border radius for å få det til å se penere ut*/
+    border-radius: 25px;
+    /*jeg ville ikke at den lille indtroduksjons boksen skulle strekke seg over hele siden i bredde så jeg tok widht 40%*/
+    width: 40%;
+    /*her måtte jeg ta margin 0 auto for å få boksen til å plassere seg i midten av toppen, jeg testet justify content men det funket ikke*/
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+#utsnitt{
+    /*her brukte jeg flex til å plassere bildene og teksten slik at det ser penest mulig ut*/
+    display: flex;
+    /*jeg valgte å ta bittelitt padding slik at bildene ikke tar hele boksen sin høyde*/
+    padding: 7px;
+    /*jeg tok margin top slik at streken over er litt lenger unna boksen*/
+    margin-top: 100px;
+    background-color: wheat;
+    /*jeg brukte border radius for å få litt rundere hjørner*/
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    /*jeg brukte height her både for å justere høyden og for å få hover animasjonen til å virke*/
+    height: 300px;
+    /*jeg måtte bruke overflow: hidden slik at listen er gjemt når man ikke har musepekeren sin over boksen*/
+    overflow: hidden;
+    /*jeg brukte transition height fordi den skal endre høyde, det skal ta ett sekund så jeg tok 1s og det skal skje på en fin måte, så jeg tok ease*/
+    transition: height 1s ease;
+    text-align: center;
+    align-items: flex-start;
+    /*jeg har også margin til bunnen slik at det blir penere*/
+    margin-bottom: 100px;
+
+}
+img{
+    /*her har jeg fikset bredden slik at bildene alltid er riktige og ikke blir most eller strukket ut*/
+    width: auto;
+    height: 300px;
+    /*jeg tok border-radius på 25 px fordi det passer til boksene de er plassert i og det ser fint ut*/
+    border-radius: 25px;
+}
+
+#utsnitt:hover{
+    /*her har jeg skrudd opp høyden slik at perspektiver seksjonen strekkes ned og viser tekst når man har musepekeren sin over*/
+    height: 420px;
+}
+
+#perspektiver{
+    /*her brukte jeg flex til å plassere bildene og teksten slik at det ser penest mulig ut*/
+    display: flex;
+    /*jeg valgte å ta bittelitt padding slik at bildene ikke tar hele boksen sin høyde*/
+    padding: 7px;
+    /*jeg tok margin top slik at streken over er litt lenger unna boksen*/
+    margin-top: 100px;
+    background-color: wheat;
+    /*jeg brukte border radius for å få litt rundere hjørner*/
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    /*jeg brukte height her både for å justere høyden og for å få hover animasjonen til å virke*/
+    height: 300px;
+    /*jeg måtte bruke overflow: hidden slik at listen er gjemt når man ikke har musepekeren sin over boksen*/
+    overflow: hidden;
+    /*jeg brukte transition height fordi den skal endre høyde, det skal ta ett sekund så jeg tok 1s og det skal skje på en fin måte, så jeg tok ease*/
+    transition: height 1s ease;
+    text-align: center;
+    align-items: flex-start;
+    /*jeg har også margin til bunnen slik at det blir penere*/
+    margin-bottom: 100px;
+}
+
+#perspektiver:hover{
+    /*her har jeg skrudd opp høyden slik at perspektiver seksjonen strekkes ned og viser tekst når man har musepekeren sin over*/
+    height: 420px;
+}
+
+footer{
+    /*her har keg tatt masse padding og en litt mørkere farge enn header for å vise enda bedre at det er footer*/
+    padding: 70px;
+    background-color: rgba(222, 184, 135, 0.649);
+}
+a{
+    /*her har jeg skrudd av tekst dekorasjonen til linkene fordi de hadde en stygg strek under seg*/
+    text-decoration: none;
+}
