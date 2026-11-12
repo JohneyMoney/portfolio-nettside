@@ -75,7 +75,12 @@ body{
     #alder{
         background-color: rgb(101, 92, 75);
     }
-    
+    #littommegselvartikkel{
+        background-color: rgb(75, 49, 17);
+    }
+    #littommegselv{
+        background-color: rgb(75, 49, 17);
+    }
 }
 
 #nettside-laging{
