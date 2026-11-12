@@ -76,13 +76,28 @@ body{
         background-color: rgb(101, 92, 75);
     }
     #littommegselvartikkel{
-        background-color: rgb(75, 49, 17);
+        background-color: rgb(88, 57, 19);
     }
     #littommegselv{
         background-color: rgb(75, 49, 17);
     }
     #littommeg{
         background-color: rgb(88, 57, 19);
+    }
+    .ferdigheterboks{
+        background-color: rgb(78, 77, 56);
+    }
+    #prosjekter{
+        background-color: rgb(78, 77, 56);
+    }
+    a{
+        color: rgb(154, 154, 246);
+    }
+    .klikkbar{
+        color: rgb(154, 154, 246);
+    }
+    #CVartikkel{
+        background-color: rgb(78, 77, 56);
     }
 }
 
