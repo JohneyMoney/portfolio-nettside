@@ -1,3 +1,3 @@
 function nathanielside(){
-    console.log("Velkommen til Nathaniel sin side!")
+    console.log("Du blir tatt inn i Nathaniel sin side nå")
 }
