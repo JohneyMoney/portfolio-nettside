@@ -66,6 +66,16 @@ body{
     .hodetekstogbilde{
         background-color: rgb(0, 0, 0);
     }
+    #AIinteresse{
+        background-color: rgb(101, 92, 75);
+    }
+    #nettside-laging{
+        background-color: rgb(101, 92, 75);
+    }
+    #alder{
+        background-color: rgb(101, 92, 75);
+    }
+    
 }
 
 #nettside-laging{
