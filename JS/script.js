@@ -1,1 +1,3 @@
-console.log("hei")
+function nathanielside(){
+    console.log("Velkommen til Nathaniel sin side!")
+}
