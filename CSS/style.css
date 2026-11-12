@@ -60,6 +60,11 @@ body{
     background-color: rgba(228, 160, 33, 0.389);
 }
 
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
 #nettside-laging{
     background-color: wheat;
     padding-left: 10px;
