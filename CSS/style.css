@@ -63,6 +63,9 @@ body{
 .dark-mode{
     background-color: black;
     color: white;
+    .hodetekstogbilde{
+        background-color: rgba(165, 42, 42, 0.259);
+    }
 }
 
 #nettside-laging{
