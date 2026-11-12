@@ -105,8 +105,8 @@ body{
     position: absolute;
     top: 8px;
     right: 16px;
-    gap: 5px;
     display: flex;
+    gap: 5px;
 }
 
 #kontaktmegtopp{
