@@ -19,11 +19,11 @@ const prompt = promptSync({ sigint: true });
 
 
 // ---------- Spilltilstand ----------
-// Disse endrer seg underveis, derfor let.
+
 let liv = 3;
 let poeng = 0;
 let harNokkel = false;
-let harKode = false;      // Koden til utgangsdøren. Spilleren får den i biblioteket.
+let harKode = false;      
 let harRomt = false;
 
 
