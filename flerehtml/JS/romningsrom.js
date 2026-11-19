@@ -239,10 +239,8 @@ while (naaverendeRom !== "slutt" && liv > 0) {
                 }
             }else if (valg === 2){
                 naaverendeRom = "gang"; 
-            //         Har spilleren både nøkkel og kode? Seier! Sett harRomt = true og naaverendeRom = "slutt".
-            //         Har spilleren bare nøkkelen? Fortell at hun også trenger koden.
-            //         Ellers: døra er låst. Send spilleren tilbake til gangen.
-            }  // Midlertidig.
+          
+            }
             break;
 
         default:
