@@ -185,7 +185,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             break;
 
         case "bibliotek":
-            // TODO: Skriv en beskrivelse av rommet.
+            
             console.log("\nDu gikk inn i bibloteket, du ser spindelvev overalt og en gammel og skummel biblotekar som sitter i enden")
             prompt("trykk enter for å fortsette")
             if (harKode){
@@ -194,7 +194,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             } else {
                 console.log("\ndu gå bort til biblotekaren, og den begynner å si en gåte")
             console.log("Biblotekar: Jeg har taster, men ingen låser. Hva er jeg?")
-            let gjett = prompt("\nSkriv svaret ditt her: ") //her skal du skrive inn det du gjetter
+            let gjett = prompt("\nSkriv svaret ditt her: ") 
             let gjettetord = gjett.toLowerCase()
             let riktigsvar = "tastatur"
             if (gjettetord === riktigsvar){
