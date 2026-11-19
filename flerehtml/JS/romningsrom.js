@@ -206,23 +206,17 @@ while (naaverendeRom !== "slutt" && liv > 0) {
                 console.log("\nFeil svar!")
             }
             }
-            // TODO: La en gammel bibliotekar stille en gåte. Spilleren skriver svaret som TEKST med prompt().
-            //       Forslag til gåte: «Jeg har taster, men ingen låser. Hva er jeg?» (svar: tastatur)
-            // TODO: Sammenlign svaret med riktig svar. Bruk toLowerCase() så store og små bokstaver ikke spiller noen rolle.
-            // TODO: Hvis spilleren allerede har løst gåten (harKode er true): skriv at hun allerede har fått koden.
-            //       Hvis svaret er riktig: skriv ut koden, sett harKode = true og gi poeng.
-            //       Hvis svaret er feil: skriv en melding og la spilleren miste liv eller bare ikke få noe, du bestemmer.
-            // TODO: Sett naaverendeRom til rommet spilleren skal til etterpå.
-            naaverendeRom = "gang";   // Midlertidig.
+           
+            naaverendeRom = "gang";   
             break;
 
         case "utgang":
-            // TODO: Skriv en beskrivelse av døra.
+    
             console.log("Du står foran en stor utgangsdør med kodelås og en diger hengelås.")
             console.log("1. Forsøk å åpne døren")
             console.log("2. Gå tilbake til gangen")
             valg = sporValg("Hva gjør du? ", 2)
-            // TODO: Bruk if / else if / else:
+
             if (valg === 1){
                 if (harNokkel && harKode){
                     console.log("\nGratulerer du har alt man trenger til å åpne døra, så du åpner døra")
