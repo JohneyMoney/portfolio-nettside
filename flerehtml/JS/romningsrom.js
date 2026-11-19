@@ -1,19 +1,3 @@
-// Oppgave 2 – Rømningsrommet
-// Kjør filen med: node 2_Romningsrommet/spill.js   (stå i sluttprosjekt-mappen)
-//
-// Slik fungerer spillet:
-//  - Variabelen naaverendeRom sier hvor spilleren er akkurat nå.
-//  - Hovedløkken nederst går rundt og rundt så lenge spillet ikke er slutt.
-//  - I hver runde bruker en switch til å finne ut hvilket rom spilleren er i.
-//  - Inni hvert rom skriver du ut hva som skjer, spør spilleren om et valg og bruker
-//    if / else if / else til å bestemme hva valget fører til.
-//  - Til slutt i rommet setter du naaverendeRom til rommet spilleren skal til videre.
-//    Setter du ikke noe nytt, blir spilleren værende i samme rom.
-//  - Funksjonene øverst er hjelpere som rommene bruker.
-//
-// Linjer som starter med TODO er det DU skal gjøre.
-// Programmet kjører også før du er ferdig, men avsluttes da tidlig.
-
 import promptSync from "prompt-sync";
 const prompt = promptSync({ sigint: true });
 
