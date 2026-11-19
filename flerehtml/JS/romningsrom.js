@@ -172,12 +172,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
                 console.log("\nDu går bort til det mistenksomme skapet og åpner det, ut spretter det et skjellet, du stapper skjellettet inn igjen og lukker skapet.")
                 prompt("Trykk enter for å fortsette")
             }
-            // TODO: Ett av valgene skal være risikabelt. Kast terningen med kastTerning() og
-            //       bruk if / else if / else til å bestemme hva som skjer. Eksempel:
-            //         1–2: spilleren mister liv (liv -= 1) og får en melding om det
-            //         3–5: spilleren finner noe og får poeng
-            //         6:   spilleren får mye poeng
-            // TODO: Sett naaverendeRom til rommet spilleren skal til etterpå.
+         
             if (valg === 3){
                 naaverendeRom = "gang"
             }
