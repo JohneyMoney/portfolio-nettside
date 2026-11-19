@@ -29,10 +29,6 @@ let harRomt = false;
 
 // ---------- Hjelpefunksjoner ----------
 
-// Stiller et spørsmål og spør på nytt helt til svaret er et heltall fra 1 til antallValg.
-// Returnerer valget som et tall.
-// Du kan se hvordan funksjonen brukes i rommet «kjeller» i hovedløkken.
-// Funksjonen skal brukes i hvert rom hvor spilleren blir spurt om å ta et valg.
 function sporValg(sporsmaal, antallValg) {
     let svar = Number(prompt(sporsmaal));
     while (svar  % 1 !== 0 || svar < 1 || svar > antallValg) {
