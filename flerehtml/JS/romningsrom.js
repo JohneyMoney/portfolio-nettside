@@ -34,16 +34,7 @@ let harRomt = false;
 // Du kan se hvordan funksjonen brukes i rommet «kjeller» i hovedløkken.
 // Funksjonen skal brukes i hvert rom hvor spilleren blir spurt om å ta et valg.
 function sporValg(sporsmaal, antallValg) {
-    // Spør første gang og gjør svaret om til tall.
     let svar = Number(prompt(sporsmaal));
-
-    // Løkka skal gå så lenge svaret er UGYLDIG. Svaret er ugyldig hvis ett av disse er sant:
-    //   - svaret er ikke et heltall      (tips: svar % 1 !== 0, dette fanger også tekst)
-    //     Et heltall delt på 1 gir rest 0. Tekst blir NaN med Number(), og NaN % 1 er også NaN,
-    //     så betingelsen blir true for både desimaltall og tekst. Se README, delmål 1.
-    //   - svaret er mindre enn 1
-    //   - svaret er større enn antallValg
-    // TODO: Bytt ut false med en betingelse som setter sammen de tre over med || (eller).
     while (svar  % 1 !== 0 || svar < 1 || svar > antallValg) {
         console.log(`Ugyldig valg. Skriv et helt tall fra 1 til ${antallValg}.`);
 
