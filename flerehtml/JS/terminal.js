@@ -16,10 +16,12 @@ console.log = function (tekst) {
 
 window.prompt = function (sporsmaal) {
   output.textContent += sporsmaal;
+  output.scrollTop = output.scrollHeight;
   return new Promise(function (svar) {
     input.onkeydown = function (e) {
       if (e.key === "Enter") {
         output.textContent += input.value + "\n";
+        output.scrollTop = output.scrollHeight;
         svar(input.value);
         input.value = "";
       }
