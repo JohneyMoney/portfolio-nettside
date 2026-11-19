@@ -100,7 +100,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
                     poeng += 10;
                     prompt("Trykk enter for å fortsette")
                 }
-                // Vi endrer ikke naaverendeRom, så spilleren blir værende i kjelleren.
+           
             } else if (valg === 2) {
                 naaverendeRom = "gang";
             }
@@ -113,9 +113,9 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             console.log("3. Gå til utgangsdøren");
             console.log("4. Gå tilbake til kjelleren");
 
-            // TODO: Spør spilleren med sporValg(). Hvor mange valg er det?
+            
             valg = sporValg("Hva gjør du? ", 4);
-            // TODO: Bruk if / else if / else til å sette naaverendeRom til
+           
             if (valg === 1){
                 naaverendeRom = "laboratorium"
             }   else if (valg === 2){
