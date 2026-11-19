@@ -62,7 +62,7 @@ function kastTerning() {
     return terning;   // Midlertidig.
 }
 
-// Skriver ut hvor mye liv og poeng spilleren har. Denne er ferdig.
+
 function visStatus() {
     console.log(`\n[ Liv: ${liv} | Poeng: ${poeng} | Nøkkel: ${harNokkel} | Kode: ${harKode} ]`);
 }
@@ -73,7 +73,7 @@ console.log("=== RØMNINGSROMMET ===");
 
 let naaverendeRom = "kjeller";
 
-// Her lagrer vi spillerens valg. Den lages utenfor løkken slik at alle rommene kan bruke den.
+
 let valg = 0;
 
 while (naaverendeRom !== "slutt" && liv > 0) {
