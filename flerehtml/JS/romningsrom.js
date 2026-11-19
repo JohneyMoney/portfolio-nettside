@@ -255,7 +255,6 @@ while (naaverendeRom !== "slutt" && liv > 0) {
 // ---------- Slutten på spillet ----------
 console.log("\n=== SLUTT ===");
 
-// TODO: Hvis liv er 0 eller mindre: skriv at spilleren tapte.
 if (liv <= 0){
     console.log("\nDu kom deg til slutten, men du tapte. 0 liv igjen.")
 } if  (harRomt){
@@ -263,9 +262,6 @@ if (liv <= 0){
 } else {
     console.log("Du tapte")
 }
-//       Ellers hvis harRomt er true: skriv at spilleren vant.
-//       Ellers: spilleren avsluttet uten å rømme.
-
 console.log(`Du endte opp med ${poeng} poeng.`);
 if (poeng < 30){
     console.log("Du greide det ikke, du klarer bedre, jo flere poeng jo bedre!")
@@ -280,5 +276,3 @@ if (poeng < 30){
     console.log("Du gjorde en kjempebra jobb, gratulerer, du er mester!")
     console.log("Tittel: Mesterdetektiv")
 }
-// TODO: Bruk if / else if / else til å skrive en tittel basert på poeng, f.eks.
-//       50 eller mer: «Mesterdetektiv», 30 eller mer: «Erfaren rømningskunstner», ellers: «Nybegynner».
