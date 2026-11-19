@@ -125,13 +125,13 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             }   else if (valg === 4){
                 naaverendeRom = "kjeller"
             }
-            //       "laboratorium", "bibliotek", "utgang" eller "kjeller".
+
             break;
 
         case "laboratorium":
-            // TODO: Skriv en beskrivelse av rommet.
+
             console.log("\nDu står i et mørkt og mystisk laboratorium. Det står noen glass med noen mystiske væsker i seg på et bord på høyre siden din, og et mistenksomt skap på venstre siden din.");
-            // TODO: Gi spilleren minst to valg, f.eks. «Åpne den mistenkelige skapdøra» og «Gå tilbake til gangen».
+  
             console.log("1. Sjekk ut glassene med de mystiske væskene i seg")
             console.log("2. Sjekk ut det mistenksomme skapet")
             console.log("3. Gå tilbake til gangen")
