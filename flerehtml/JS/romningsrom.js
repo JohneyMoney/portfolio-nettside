@@ -47,7 +47,6 @@ function sporValg(sporsmaal, antallValg) {
     while (svar  % 1 !== 0 || svar < 1 || svar > antallValg) {
         console.log(`Ugyldig valg. Skriv et helt tall fra 1 til ${antallValg}.`);
 
-        // TODO: Spør på nytt og lagre det nye svaret i svar.
         svar = Number(prompt(sporsmaal))
     }
 
