@@ -1,5 +1,3 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync({ sigint: true });
 
 
 // ---------- Spilltilstand ----------
@@ -13,12 +11,12 @@ let harRomt = false;
 
 // ---------- Hjelpefunksjoner ----------
 
-function sporValg(sporsmaal, antallValg) {
-    let svar = Number(prompt(sporsmaal));
+async function sporValg(sporsmaal, antallValg) {
+    let svar = Number(await prompt(sporsmaal));
     while (svar  % 1 !== 0 || svar < 1 || svar > antallValg) {
         console.log(`Ugyldig valg. Skriv et helt tall fra 1 til ${antallValg}.`);
 
-        svar = Number(prompt(sporsmaal))
+        svar = Number(await prompt(sporsmaal))
     }
 
     return svar;
@@ -55,17 +53,17 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             console.log("1. Åpne den rustne kisten");
             console.log("2. Gå opp trappa til gangen");
 
-            valg = sporValg("Hva gjør du? ", 2);
+            valg = await sporValg("Hva gjør du? ", 2);
 
             if (valg === 1) {
                 if (harNokkel) {
                     console.log("\nKisten er tom nå. Du har allerede tatt nøkkelen.");
-                    prompt("Trykk enter for å fortsette")
+                    await prompt("Trykk enter for å fortsette")
                 } else {
                     console.log("\nI kisten ligger en gammel nøkkel! Du stapper den i lomma.");
                     harNokkel = true;
                     poeng += 10;
-                    prompt("Trykk enter for å fortsette")
+                    await prompt("Trykk enter for å fortsette")
                 }
            
             } else if (valg === 2) {
@@ -81,7 +79,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             console.log("4. Gå tilbake til kjelleren");
 
             
-            valg = sporValg("Hva gjør du? ", 4);
+            valg = await sporValg("Hva gjør du? ", 4);
            
             if (valg === 1){
                 naaverendeRom = "laboratorium"
@@ -103,7 +101,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             console.log("2. Sjekk ut det mistenksomme skapet")
             console.log("3. Gå tilbake til gangen")
 
-            valg = sporValg("Hva gjør du? ", 3);
+            valg = await sporValg("Hva gjør du? ", 3);
 
             if (valg === 1){
                 
@@ -111,21 +109,21 @@ while (naaverendeRom !== "slutt" && liv > 0) {
                 console.log("1. Ta en slurk av drikken")
                 console.log("2. Legg fra deg drikken å gå tilbake")
 
-                valg = sporValg("Hva gjør du? ", 2);
+                valg = await sporValg("Hva gjør du? ", 2);
 
                 if (valg === 1){
                     let terning = kastTerning();
                     if (terning === 1 || terning === 2){
                         console.log("\nDet smakte som muggen hostesaft, men du føler at det ikke gjorde noen skade")
-                        prompt("Trykk enter for å fortsette")
+                        await prompt("Trykk enter for å fortsette")
                     } else if (terning === 3 || terning === 4){
                         console.log("\nDet smakte som muggen hostesaft, synet ditt begynner å bli blurry, og du besvimer. Når du våkner igjen føler du deg veldig dårlig. (-1 liv)")
                         liv -= 1
-                        prompt("Trykk enter for å fortsette")
+                        await prompt("Trykk enter for å fortsette")
                     } else if (terning === 5 || terning === 6){
                         console.log("\nDet smakte som eplejuice og du føler deg fantastisk etter å ha drukket den! (+50 poeng)")
                         poeng += 50
-                        prompt("Trykk enter for å fortsette")
+                        await prompt("Trykk enter for å fortsette")
                     } else {
                         console.log("Noe gikk galt")
                     }
@@ -137,7 +135,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             }
             if (valg === 2){
                 console.log("\nDu går bort til det mistenksomme skapet og åpner det, ut spretter det et skjellet, du stapper skjellettet inn igjen og lukker skapet.")
-                prompt("Trykk enter for å fortsette")
+                await prompt("Trykk enter for å fortsette")
             }
          
             if (valg === 3){
@@ -149,21 +147,21 @@ while (naaverendeRom !== "slutt" && liv > 0) {
         case "bibliotek":
             
             console.log("\nDu gikk inn i bibloteket, du ser spindelvev overalt og en gammel og skummel biblotekar som sitter i enden")
-            prompt("trykk enter for å fortsette")
+            await prompt("trykk enter for å fortsette")
             if (harKode){
                 console.log("\nDu har allerede koden din tulling, det er ikke noe mer å gjøre her")
                 naaverendeRom = "gang"
             } else {
                 console.log("\ndu gå bort til biblotekaren, og den begynner å si en gåte")
             console.log("Biblotekar: Jeg har taster, men ingen låser. Hva er jeg?")
-            let gjett = prompt("\nSkriv svaret ditt her: ") 
+            let gjett = await prompt("\nSkriv svaret ditt her: ") 
             let gjettetord = gjett.toLowerCase()
             let riktigsvar = "tastatur"
             if (gjettetord === riktigsvar){
                 console.log("\nGratulerer! Svaret er riktig (nå har du koden) (+30 poeng)")
                 poeng += 30
                 harKode = true
-                prompt(`\nTrykk enter for å fortsette`)
+                await prompt(`\nTrykk enter for å fortsette`)
             } else{
                 console.log("\nFeil svar!")
             }
@@ -177,7 +175,7 @@ while (naaverendeRom !== "slutt" && liv > 0) {
             console.log("Du står foran en stor utgangsdør med kodelås og en diger hengelås.")
             console.log("1. Forsøk å åpne døren")
             console.log("2. Gå tilbake til gangen")
-            valg = sporValg("Hva gjør du? ", 2)
+            valg = await sporValg("Hva gjør du? ", 2)
 
             if (valg === 1){
                 if (harNokkel && harKode){
