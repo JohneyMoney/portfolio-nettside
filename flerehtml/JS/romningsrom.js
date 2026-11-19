@@ -58,8 +58,8 @@ function sporValg(sporsmaal, antallValg) {
 // Kaster en terning. Skal returnere et tilfeldig heltall fra 1 til 6.
 function kastTerning() {
     const terning = Math.floor(Math.random() * 6) + 1;
-    // TODO: Se i tema 6, «Tilfeldige tall».
-    return terning;   // Midlertidig.
+   
+    return terning;  
 }
 
 
