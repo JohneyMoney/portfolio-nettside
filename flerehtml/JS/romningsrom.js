@@ -49,13 +49,11 @@ function sporValg(sporsmaal, antallValg) {
 
         // TODO: Spør på nytt og lagre det nye svaret i svar.
         svar = Number(prompt(sporsmaal))
-        //       Gjør du ikke det, blir svaret aldri endret og løkka stopper aldri.
     }
 
     return svar;
 }
 
-// Kaster en terning. Skal returnere et tilfeldig heltall fra 1 til 6.
 function kastTerning() {
     const terning = Math.floor(Math.random() * 6) + 1;
    
