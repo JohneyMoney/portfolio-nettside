@@ -76,13 +76,12 @@ let naaverendeRom = "kjeller";
 // Her lagrer vi spillerens valg. Den lages utenfor løkken slik at alle rommene kan bruke den.
 let valg = 0;
 
-// Løkka kjører så lenge spillet ikke er slutt og spilleren fortsatt har liv.
 while (naaverendeRom !== "slutt" && liv > 0) {
     visStatus();
 
     switch (naaverendeRom) {
 
-        // FERDIG ROM – bruk dette som mal for de andre.
+     
         case "kjeller":
             console.log("\nDu våkner i et kaldt kjellerrom. Det lukter fuktig. Det er mørkt, men du ser en kiste og en trapp.");
             console.log("1. Åpne den rustne kisten");
