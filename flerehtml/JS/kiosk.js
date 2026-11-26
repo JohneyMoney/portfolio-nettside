@@ -29,7 +29,6 @@ let harNokPenger = betalt >= total;
 let kanSeFilmenOgBetale = kanSeFilmen && harNokPenger;
 console.log(`\n=== SJEKKER ===`);
 console.log(`Kan se filmen (aldersgrense ${aldersgrense}): ${kanSeFilmen}`);
-// TODO: Skriv ut de tre andre sjekkene på samme måte.
 console.log(`Får personen honnorbillett (alder under 12 eller over 67): ${faarHonnorbillett}`);
 console.log(`Har personen nok penger (${total}): ${harNokPenger}`);
 console.log(`Kan personen se filmer og betale (aldersgrense ${aldersgrense} og har nok penger): ${kanSeFilmenOgBetale}`);
